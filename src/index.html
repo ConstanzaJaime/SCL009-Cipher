@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cifrado César</title>
+    <!--ligado de archivos JS y CSS-->
+   <link rel="stylesheet" href="style.css">
+   <script src="cipher.js"></script>
+   <script src="index.js"></script>
+</head>
+<body>
+    <h1>Cifrado César</h1> <br>
+    <p>En está página podrás codificar y decodificar mensajes en código césar </p> <br>
+    <input type="text" id="mensajeEntrada" value="" class="mensajeE" placeholder="Escribe tu mensaje aquí">
+    <input type="number" id="offset" class=""><br><br>
+    <button id="botonCodificar" onclick="codificar()">Codificar</button>
+    <button id="botonDecodificar" onclick="decodificar()">Decodificar</button>
+    <output type="text" id="mensajeSalida" class="mensajeS"><br>
+    <script>
+        let name= "hola" 
+     </script>
+<input type="text" id='nombre' value=''>
+<script>
+    let textoCesar = document.getElementById("nombre").value;
+    document.write(textoCesar) </script>
+</body>
 </html>
