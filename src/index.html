@@ -11,19 +11,13 @@
    <script src="index.js"></script>
 </head>
 <body>
-    <h1>Cifrado César</h1> <br>
-    <p>En está página podrás codificar y decodificar mensajes en código césar </p> <br>
-    <input type="text" id="mensajeEntrada" value="" class="mensajeE" placeholder="Escribe tu mensaje aquí">
-    <input type="number" id="offset" class=""><br><br>
-    <button id="botonCodificar" onclick="codificar()">Codificar</button>
-    <button id="botonDecodificar" onclick="decodificar()">Decodificar</button>
-    <output type="text" id="mensajeSalida" class="mensajeS"><br>
-    <script>
-        let name= "hola" 
-     </script>
-<input type="text" id='nombre' value=''>
-<script>
-    let textoCesar = document.getElementById("nombre").value;
-    document.write(textoCesar) </script>
+    <h1>Cifrado César</h1> 
+    <p>En esta página podrás codificar y decodificar mensajes en código césar </p> <br>
+    <input id="inputMesagge" type="text" class="inputMessage" value="" placeholder="Escribe tu mensaje aquí">
+    <input id="offset" type="text" class="a" placeholder="Ingresa un número"><br><br>
+    <button id="encodeButton" >Codificar</button>
+    <button id="decodeButton" onclick="decode()">Decodificar</button> <br><br>
+    <input  id="outputMessage" type="text" class="outputMessage" readonly=true><br><br>
+    <button id="reset" onclick="reset()">Reset</button>
 </body>
 </html>
