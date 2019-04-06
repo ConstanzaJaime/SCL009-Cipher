@@ -1,7 +1,7 @@
 ///BOTON CODIFICAR
 document.getElementById("encodeButton").addEventListener("click", () => {
 
-  let string= document.getElementById("inputMessage").value.toUpperCase() ;
+  let string= document.getElementById("inputMessage").value;
   let offset= parseInt(document.getElementById("offset").value);
   let encodeText=cipher.encode(string,offset);
 
@@ -11,7 +11,7 @@ document.getElementById("encodeButton").addEventListener("click", () => {
 ///BOTON DECODIFICAR
 document.getElementById("decodeButton").addEventListener("click", () => {
 
-  let string= document.getElementById("inputMessage").value.toUpperCase();
+  let string= document.getElementById("inputMessage").value;
   let offset= parseInt(document.getElementById("offset").value);
   let decodeText=cipher.decode(string,offset);
     
