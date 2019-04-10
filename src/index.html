@@ -10,15 +10,30 @@
   
 </head>
 <body>
-    <h1>Cifrado César</h1> 
-    <p>En esta página podrás codificar y decodificar mensajes en código césar </p> <br>
-    <input id="inputMessage" type="text" placeholder="Escribe tu mensaje aquí">
-    <input id="inputOffset" type="text"  placeholder="Ingresa un número"><br><br>
-    <button id="encodeButton" >Codificar</button>
-    <button id="decodeButton" >Decodificar</button> <br><br>
-    <input  id="outputMessage" type="text" readonly="true"><br><br>
-    <button id="reset" >Limpiar</button>
+    <div id="padre"><h1>Cifrador/Descifrador</h1>
+        <h2>Ingresa tu número secreto (*)</h2>
+        <input id="inputOffset" type="number" placeholder="Ingresa un número">
+        <h2>Ingresa el mensaje que quieres cifrar/descifrar </h2>
+    <textarea id="inputMessage" type="text" class="box" placeholder="Escribe tu mensaje aquí"></textarea><br>
+    <button id="encodeButton" class="boton">Cifrar</button>
+    <button id="decodeButton" class="boton">Decifrar</button> <br>
+    <textarea  id="outputMessage" type="text" class="box"readonly="true"></textarea><br>
+    <button id="reset" class="boton">Limpiar</button>
+
+</div>
+    <div id="hijo">
+        <h1 class="bold">Close</h1> 
+    <p></p>
+    <p>Nuestra marca busca ayudar a las personas, a través del desarrollo de plataformas y aplicaciones web.
+            En esta ocasión hemos creado una página te permitirá cifrar/descifrar mensajes a través de un número secreto. 
+    </p><p>
+            La idea de nuestra página es darte la posibilidad de crear mensajes con la seguridad de que no habrá una 
+            recepción desafortunada de terceros.</p> <br>
+        <h5>(*)AL CIFRAR debes escoger un número que podrás dar para vean tu mensaje. Que será tu número secreto.<br>
+            / AL DESCIFRAR debes colocar el número secreto dado por el creador del mensaje para poder leer el texto original.
+        </h5>
          <script src="cipher.js"></script>
          <script src="index.js"></script>
+    </div>
 </body>
 </html>

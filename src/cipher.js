@@ -67,13 +67,3 @@ window.cipher = {
     return outputText //Caracteres decodificados
   }
 };
-
-
-/*
-if(string !==true && offset !==true){
-  return alert("Debes colocar un mensaje y número válido");
-} if(string!==true){
-  return alert("Debes ingresar un mensaje");
-} if(offset!==true){
-  return alert("Debes ingresar un número válido");
-} else { */
